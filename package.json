@@ -24,5 +24,8 @@
     "react-dom": "latest",
     "styled-components": "^5.3.11",
     "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "encoding": "^0.1.13"
   }
 }
