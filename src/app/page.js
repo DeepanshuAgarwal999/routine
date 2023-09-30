@@ -1,12 +1,15 @@
 "use client";
-import { Button, Container } from "@mui/material";
+import {
+  Button,
+  Container,
+  Stack,
+  FormControlLabel,
+  Switch,
+} from "@mui/material";
 import Classcard from "./components/class-card";
-import { Form, FieldArray, FieldArrayItem } from "houseform";
-import { useRef } from "react";
-import { Stack } from "@mui/system";
+import { Form, FieldArray } from "houseform";
+import { useEffect, useRef, useState } from "react";
 import { routines } from "../../fake_routine";
-import { orange } from "@mui/material/colors";
-import _, { transform } from "lodash";
 import {
   Page,
   Text,
@@ -16,6 +19,8 @@ import {
   PDFViewer,
   pdf,
 } from "@react-pdf/renderer";
+import { orange } from "@mui/material/colors";
+import _ from "lodash";
 import { saveAs } from "file-saver";
 
 const styles = StyleSheet.create({
