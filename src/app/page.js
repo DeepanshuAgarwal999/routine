@@ -146,13 +146,13 @@ export default function Home() {
                 ref={formArrayRef}
                 name="routine"
                 initialValue={[
-                  // {
-                  //   standard: "",
-                  //   periods: [
-                  //     // { number: "", subject: "", teacher: "" }
-                  //   ],
-                  // },
-                  ...routines,
+                  {
+                    standard: "",
+                    periods: [
+                      { day:"" ,number: "", subject: "", teacher: "" }
+                    ],
+                  },
+                  // ...routines,
                 ]}
               >
                 {({ value, remove }) => (
